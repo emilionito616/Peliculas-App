@@ -1,7 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
-import { HttpClientModule } from '@angular/common/http'
+
+import { HttpClientModule } from '@angular/common/http';
 
 import { PeliculasService } from './services/peliculas.service';
 import { APP_ROUTING } from './app.routes';
@@ -30,7 +32,8 @@ import { GaleriaComponent } from './components/home/galeria.component';
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
-    APP_ROUTING
+    APP_ROUTING,
+    FormsModule
   ],
   providers: [
     PeliculasService

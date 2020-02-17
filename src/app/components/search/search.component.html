@@ -1,1 +1,10 @@
-<p>search works!</p>
+<div class="container main-container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="form-group">
+                <label><h3>Buscar</h3></label>
+                <input [(ngModel)]="buscar" (keyup.enter)="buscarPelicula()" type="text" name="buscar" class="form-control" placeholder="Buscar una pelicula">
+            </div>
+        </div>
+    </div>
+</div>
