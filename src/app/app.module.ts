@@ -5,7 +5,6 @@ import { FormsModule } from '@angular/forms';
 
 import { HttpClientModule } from '@angular/common/http';
 
-import { PeliculasService } from './services/peliculas.service';
 import { APP_ROUTING } from './app.routes';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -35,9 +34,7 @@ import { GaleriaComponent } from './components/home/galeria.component';
     APP_ROUTING,
     FormsModule
   ],
-  providers: [
-    PeliculasService
-  ],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
